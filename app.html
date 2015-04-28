@@ -1,0 +1,112 @@
+<link href='https://fonts.googleapis.com/css?family=Arimo|Lobster' rel='stylesheet' type='text/css'>
+<link href="../angularjs-taxonomy/Styles/bootstrap.css" rel="stylesheet" />
+<link href="../angularjs-taxonomy/Styles/app.css" rel="stylesheet" />
+<link href="../angularjs-taxonomy/Styles/taxonomypickercontrol.css" rel="stylesheet" />
+<!-- There's not much to the HTML file. A div that references my AngularJS controller -->
+<div id="ng-app" data-ng-app="app" data-ng-cloak >	
+	<div id="strk" name="strk" data-ng-form="strk" data-ng-cloak>
+        <div class="container" id="sr-header" data-ng-controller="appCtrlr as vm" data-ng-cloak>        
+			<div class="row">
+				<div class="col-sm-8">
+					<h1 class="srTitle">SharePoint Taxonomy Control</h1>
+				</div>
+			</div>
+			<div class="row">
+                <div class="col-sm-2">
+                    <span>
+                            Select Tags:
+					</span>
+                </div>
+				<div class="col-sm-6">
+                    <div class="form-group">                        
+                        <div ui-Taxonomy ng-model="vm.terms" pp-ready-to-load="{{vm.loadTaxonomyPickers}}" pp-termsetid="a5bd4ff2-2823-4ea2-8dd6-2d02c845493b" pp-is-multi-valued="{{true}}" id="taxPickerGeography" ></div>
+                    </div>
+                </div>
+            </div>
+			<div class="row" style="margin-bottom:10px;">
+				<div class="col-sm-8">
+                    <span>
+                       Selected Terms:
+					</span>
+					<span data-ng-repeat="r in vm.terms track by $index">
+						{{r.Name}} <span style="color:BURLYWOOD;">(Path: {{r.PathOfTerm}})</span><span data-ng-if="!$last">,&nbsp;</span>
+					</span>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-sm-2">
+                    <span>
+                            Select Keywords:
+					</span>
+                </div>
+				<div class="col-sm-6">
+                    <div class="form-group">
+                    <div ui-Taxonomy ng-model="vm.keywords" pp-ready-to-load="{{vm.loadTaxonomyPickers}}" pp-is-keywords="{{true}}" pp-is-multi-valued="{{true}}" id="taxPickerKeywords" ></div>                        
+                    </div>
+                </div>
+            </div>
+			<div class="row" style="margin-bottom:10px;">
+				<div class="col-sm-8">
+                    <span>
+                       Selected Terms:
+					</span>
+					<span data-ng-repeat="r in vm.keywords track by $index">
+						{{r.Name}} <span style="color:BURLYWOOD;">(Path: {{r.PathOfTerm}})</span><span data-ng-if="!$last">,&nbsp;</span>
+					</span>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-sm-2">
+                    <span>
+                            Select Hashtags:
+					</span>
+                </div>
+				<div class="col-sm-6">
+                    <div class="form-group">
+                        <div ui-Taxonomy ng-model="vm.hashtags" pp-ready-to-load="{{vm.loadTaxonomyPickers}}" pp-is-hashtags="{{true}}" pp-is-multi-valued="{{false}}" id="taxPickerHashtags" ></div>
+                    </div>
+                </div>
+            </div>
+			<div class="row">
+				<div class="col-sm-8">
+                    <span>
+                       Selected Terms:
+					</span>
+					<span data-ng-repeat="r in vm.hashtags track by $index">
+						{{r.Name}} <span style="color:BURLYWOOD;">(Path: {{r.PathOfTerm}})</span><span data-ng-if="!$last">,&nbsp;</span>
+					</span>
+                </div>
+            </div>
+		</div>		
+	</div>
+</div>
+
+<!-- Load the constant variables -->
+<script type="text/ecmascript" src="../angularjs-taxonomy/config/config.constants.js"></script>
+<script type="text/ecmascript" src="../angularjs-taxonomy/models/models.js"></script>
+<!-- Load third party scripts -->
+<!-- AngularJS, Sanitize, resource -->
+<script type="text/ecmascript" src="../angularjs-taxonomy/scripts/angular.min.js"></script>
+<script type="text/ecmascript" src="../angularjs-taxonomy/scripts/angular-sanitize.min.js"></script>
+<script type="text/ecmascript" src="../angularjs-taxonomy/scripts/angular-resource.min.js"></script>
+<script type="text/ecmascript" src="../angularjs-taxonomy/scripts/angular-route.min.js"></script>
+<script type="text/ecmascript" src="../angularjs-taxonomy/scripts/ui-bootstrap.js"></script>
+<script type="text/ecmascript" src="../angularjs-taxonomy/scripts/jquery-1.9.1.min.js"></script>
+<script type="text/ecmascript" src="../angularjs-taxonomy/scripts/taxonomypickercontrol.js"></script>
+<!-- All of this scripts are used to create the app. -->
+<script type="text/ecmascript" src="../angularjs-taxonomy/app.js"></script>
+<script type="text/ecmascript" src="../angularjs-taxonomy/config/config.js"></script>
+<script type="text/ecmascript" src="../angularjs-taxonomy/config/config.taxonomy.js"></script>
+<script type="text/ecmascript" src="../angularjs-taxonomy/common/common.js"></script>
+<script type="text/ecmascript" src="../angularjs-taxonomy/common/logging.js"></script>
+<script type="text/ecmascript" src="../angularjs-taxonomy/controllers/controllers.js"></script>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+﻿.strk-hidebeforeload{
+	visibility:hidden;
+}
+.strk-displayafterload{
+	visibility:visible !important;
+}
+
+div#s4-workspace {
+	background-color: #0072c6;
+}
+
+div#strk{
+	background-color:inherit;
+	font-family:Arimo;
+	color: #fff;
+	font-size:14px;
+	line-height:18px!important;
+}
+
+div#sideNavBox {
+	display:none;
+}
+
+div#contentBox{
+	margin-left:0px;
+	margin-right:0px;	
+}
+
+div.ms-srch-sb{
+	background-color:#fff;
+}
+
+.srTitle{
+	font-family:Lobster !important;	
+	font-size: 48px;
+}
+
+/* Taxonomy Control Modifications */
+div#strk  .cam-taxpicker{
+	/* Make this at least 26px longer than the width of cam-taxpicker-editor*/
+	width:220px;
+}
+div#strk  .cam-taxpicker-editor{
+	width:194px;
+	border-color: rgb(171, 171, 171);
+	background-color: rgb(255, 255, 255);
+	color: grey;
+}
+
+/* People Picker Modifications */
+div#strk .sp-peoplepicker-autoFillContainer{
+	z-index: 20;
+	background-color:#fff;
+}
+div#strk .sp-peoplepicker-topLevel{
+	background-color:#fff;
+}
+div#strk .sp-peoplepicker-topLevel{
+	height:34px;
+}
+
+/* Start - Calendar CSS*/
+div#strk div.sr-calendar {
+	font-family: Arimo;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff;
+	width: 220px;
+}
+
+div#strk div.sr-calendar .form-control{
+	color: #555;
+	line-height:1.4285;
+	padding: 6px 6px 6px;
+	font-size: 14px;
+	border: 1px solid rgb(171,171,171);    
+	border-radius:0;
+}
+
+div#strk div.sr-calendar .btn {	
+	border-radius: 0;
+	border-color: rgb(171,171,171);
+	min-width: 40px;
+	width: 40px;
+}
+
+div#strk div.sr-calendar li > span.btn-group > .btn-info,
+div#strk div.sr-calendar li > span.btn-group > .btn-danger,
+div#strk div.sr-calendar li > .btn-success {		
+	min-width: 65x;
+	width: 65px;
+}
+
+
+div#strk div.sr-calendar .btn:hover, 
+div#strk div.sr-calendar .btn:focus, 
+div#strk div.sr-calendar .btn:active, 
+div#strk div.sr-calendar .btn.active, 
+div#strk div.sr-calendar .open .dropdown-toggle.btn {
+	color: #333;
+	background-color: rgb(253, 253, 253);
+	border-color: rgb(171,171,171);
+}
+
+div#strk .sr-calendar .input-group-btn .sr-calendar-button {
+padding: 2px 3px 0px 3px!important;
+}
+
+div#strk .sr-calendar .input-group-btn .sr-calendar-button {padding:1px 3px 1px 3px!important}
+div#strk .sr-calendar .input-group-btn .sr-calendar-button .glyphicon-calendar {width:25px;height:25px}
+div#strk div.sr-calendar .sr-calendar-button {		
+	height:34px
+}
+div.sr-calendar .dropdown-menu .btn {border:none!important}
+div.sr-calendar .dropdown-menu {border:solid 1px #ccc!important}
+div.sr-calendar .dropdown-menu table {margin-top:0!important}
+div.sr-calendar .dropdown-menu li .btn-group .btn {margin-right:5px!important}
+div#strk div.sr-calendar .dropdown-menu {border-radius:0px;}
+
+div#strk .sr-calendar .input-group-btn .sr-calendar-button .glyphicon-calendar {
+width: 25px;
+height: 25px;
+padding-top: 3px;
+}
+
+/* End - Calendar CSS*/
+
+
